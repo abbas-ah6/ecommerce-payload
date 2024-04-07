@@ -44,14 +44,14 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
                                 const icon = item.link.icon as Media;
                                 return (
                                     <Button
-                                        key={item.link.label}
-                                        newTab={item.link.newTab}
+                                        key={item?.link?.label}
+                                        newTab={item?.link?.newTab}
                                         el='link'
-                                        href={item.link.url}
+                                        href={item?.link?.url}
                                     >
                                         <Image
-                                            src={icon.url}
-                                            alt={icon.alt}
+                                            src={icon?.url}
+                                            alt={icon?.alt}
                                             width={24}
                                             height={24}
                                             className={classes.socialIcon}
